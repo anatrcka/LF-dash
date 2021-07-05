@@ -1,2 +1,2 @@
-# LF-dash
+# Luminosity functions
  
