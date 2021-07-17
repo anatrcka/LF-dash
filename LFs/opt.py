@@ -3,6 +3,13 @@ recipes = [
     "tau11_fdust1_best_apers",
     
 ]
+
+sim = {
+    "TNG50 1": ["tau3_fdust2_best_apers", "tau11_fdust1_best_apers"],
+    "TNG50 2": ["tau3_fdust2_best_apers"],
+
+}
+
 apers = ["inf", "10", "2R", "30"]
 
 oris = ["or", "fo", "eo"]
@@ -23,6 +30,11 @@ colors_rgba = {
     "E100":"rgba(44, 160, 44, 0.2)",
     "ERecal":"rgba(255, 127, 14, 0.2)",
 }
+
+rec_l = {
+    "tau3_fdust2_best_apers": u"\u03C4" + "=3, " + "fdust=0.2",
+    "tau11_fdust1_best_apers": u"\u03C4" + "=11, " + "fdust=0.1",
+}
 apers_l = {
     "inf": "5R" + u"\u00BD",
     "10": "10kpc",
@@ -39,3 +51,16 @@ mark = {
     "TNG50 1": {"or": "hexagram", "fo": "circle", "eo": "diamond-wide"},
     "TNG50 2": {"or": "hexagram-open", "fo": "circle-open", "eo": "diamond-wide-open"},
 }
+
+bands_o = [
+        ["SDSS_u", "SDSS_g", "SDSS_r"],
+        ["SDSS_i", "SDSS_z", "UKIDSS_Y"],
+        ["UKIDSS_J", "UKIDSS_H", "UKIDSS_K"],
+    ]
+
+bands_ir = [["L250", "L350"], ["L500", "LTIR"]]
+
+
+# little h for the TNG-50 simulations
+def TNG_h():
+    return 0.6774
