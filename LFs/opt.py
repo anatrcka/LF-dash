@@ -1,9 +1,8 @@
-recipes = [
-    "tau3_fdust2_best_apers",
-    "tau11_fdust1_best_apers",
-    
-]
 
+rec = {
+    "tau3_fdust2_best_apers": ["TNG50 1", "TNG50 2"],
+    "tau11_fdust1_best_apers": ["TNG50 1"],
+}
 sim = {
     "TNG50 1": ["tau3_fdust2_best_apers", "tau11_fdust1_best_apers"],
     "TNG50 2": ["tau3_fdust2_best_apers"],
@@ -47,6 +46,8 @@ apers_lab = {
     "2R": "$2R_{1/2}$",
     "30": "30 kpc",
 }
+oris_l = {"or": "random", "fo": "face-on", "eo": "edge-on"}
+
 mark = {
     "TNG50 1": {"or": "hexagram", "fo": "circle", "eo": "diamond-wide"},
     "TNG50 2": {"or": "hexagram-open", "fo": "circle-open", "eo": "diamond-wide-open"},
