@@ -59,8 +59,9 @@ bands_o = [
         ["UKIDSS_J", "UKIDSS_H", "UKIDSS_K"],
     ]
 
-bands_ir = [["L250", "L350"], ["L500", "LTIR"]]
+bands_ir = [["S250", "S350"], ["S500", "TIR"]]
 
+# Constants
 
 # little h for the TNG-50 simulations
 def TNG_h():
