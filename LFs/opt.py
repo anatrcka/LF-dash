@@ -47,7 +47,7 @@ apers_lab = {
     "30": "30 kpc",
 }
 oris_l = {"or": "random", "fo": "face-on", "eo": "edge-on"}
-
+oris_s = {"or": u"\u2736", "fo": u"\u25CF", "eo": u"\u2B2C"}
 mark = {
     "TNG50 1": {"or": "hexagram", "fo": "circle", "eo": "diamond-wide"},
     "TNG50 2": {"or": "hexagram-open", "fo": "circle-open", "eo": "diamond-wide-open"},
