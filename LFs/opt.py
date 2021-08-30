@@ -18,17 +18,27 @@ colors = {
     "10": "#58CCED",
     "2R": "#3895D3",
     "30": "#1261A0",
-    "E100": "#2ca02c",
-    "ERecal": "#ff7f0e",
 }
 colors_rgba = {
     "inf": "rgba(7, 47, 95, 0.2)",
     "10": "rgba(88, 204, 237, 0.2)",
     "2R": "rgba(56, 149, 211, 0.2)",
     "30":"rgba(18, 97, 160, 0.2)",
-    "E100":"rgba(44, 160, 44, 0.2)",
-    "ERecal":"rgba(255, 127, 14, 0.2)",
 }
+
+colors_2 = {
+    "inf": "#510ac9",
+    "10": "#e4cbff",
+    "2R": "#ca9bf7",
+    "30": "#a55af4",
+}
+colors_rgba_2 = {
+    "inf": "rgba(81, 10, 201, 0.2)",
+    "10": "rgba(228, 203, 255, 0.2)",
+    "2R": "rgba(202, 155, 247, 0.2)",
+    "30":"rgba(165, 90, 244, 0.2)",
+}
+
 
 rec_l = {
     "tau3_fdust2_best_apers": u"\u03C4" + "=3, " + "fdust=0.2",
@@ -50,7 +60,7 @@ oris_l = {"or": "random", "fo": "face-on", "eo": "edge-on"}
 oris_s = {"or": u"\u2736", "fo": u"\u25CF", "eo": u"\u2B2C"}
 mark = {
     "TNG50 1": {"or": "hexagram", "fo": "circle", "eo": "diamond-wide"},
-    "TNG50 2": {"or": "hexagram-open", "fo": "circle-open", "eo": "diamond-wide-open"},
+    "TNG50 2": {"or": "hexagram", "fo": "circle", "eo": "diamond-wide"},
 }
 
 bands_o = [
@@ -59,10 +69,26 @@ bands_o = [
         ["UKIDSS_J", "UKIDSS_H", "UKIDSS_K"],
     ]
 
+sbands = {'S250':252.5,
+          'S350':354.3,
+          'S500':515.4,
+          'TIR':100,
+}
+
+
 bands_ir = [["S250", "S350"], ["S500", "TIR"]]
+bands_ir_sim = [["SPIRE_250", "SPIRE_350"], ["SPIRE_500", "LIR"]]
 
 # Constants
 
 # little h for the TNG-50 simulations
 def TNG_h():
     return 0.6774
+
+# speed of light
+def speed_c():
+    return 299792458. # m/s
+
+# L Sun 
+def L_Sun():
+    return 3.826e26 #W
